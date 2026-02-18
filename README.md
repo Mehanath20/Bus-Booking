@@ -10,6 +10,18 @@ To start a local development server, run:
 ng serve
 ```
 
+## Backend Server
+
+To start the mock backend server (json-server), run:
+
+```bash
+npm run server
+```
+
+The API will be available at `http://localhost:3000`.
+
+The data is stored in `db.json`. Any changes made via the API will be automatically saved to this file.
+
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Code scaffolding
@@ -57,3 +69,13 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+admin@delhitransport.com
+admin
+
+demo@customer.com
+demo123
+
+johndoe@gmail.com
+mehanath

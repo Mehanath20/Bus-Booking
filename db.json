@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Demo Customer",
+      "email": "demo@customer.com",
+      "password": "demo123",
+      "phone": "+91 98765 43210",
+      "role": "customer",
+      "points": 150,
+      "tier": "Silver",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "johndoe",
+      "email": "johndoe@gmail.com",
+      "phone": "7305646175",
+      "password": "mehanath",
+      "role": "customer",
+      "createdAt": "2026-02-17T07:24:46.345Z",
+      "points": 0,
+      "tier": "Bronze",
+      "id": "AKzxxeo"
+    },
+    {
+      "name": "nanda",
+      "email": "nanda@gmail.com",
+      "phone": "7305646175",
+      "password": "mehanath",
+      "role": "customer",
+      "createdAt": "2026-02-18T06:11:10.796Z",
+      "points": 0,
+      "tier": "Bronze",
+      "id": "dFxNX3X"
+    }
+  ],
+  "buses": [
+    {
+      "id": "1",
+      "name": "Delhi Express",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "price": 500,
+      "duration": 300,
+      "departureTime": "08:00 AM",
+      "arrivalTime": "01:00 PM",
+      "totalSeats": 40,
+      "availableSeats": 15,
+      "occupancy": 62,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Charging Port"
+      ],
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Rajdhani Travels",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "price": 450,
+      "duration": 330,
+      "departureTime": "09:30 AM",
+      "arrivalTime": "02:30 PM",
+      "totalSeats": 40,
+      "availableSeats": 8,
+      "occupancy": 80,
+      "amenities": [
+        "AC",
+        "Recliner"
+      ],
+      "rating": 4.2
+    },
+    {
+      "id": "3",
+      "name": "Pink City Shuttle",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "price": 600,
+      "duration": 270,
+      "departureTime": "06:00 AM",
+      "arrivalTime": "10:30 AM",
+      "totalSeats": 35,
+      "availableSeats": 20,
+      "occupancy": 43,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Snacks",
+        "Entertainment"
+      ],
+      "rating": 4.8
+    },
+    {
+      "id": "4",
+      "name": "Capital Liner",
+      "source": "Delhi",
+      "destination": "Agra",
+      "price": 350,
+      "duration": 180,
+      "departureTime": "07:00 AM",
+      "arrivalTime": "10:00 AM",
+      "totalSeats": 40,
+      "availableSeats": 12,
+      "occupancy": 70,
+      "amenities": [
+        "AC",
+        "Charging Port"
+      ],
+      "rating": 4.3
+    },
+    {
+      "id": "5",
+      "name": "Taj Express",
+      "source": "Delhi",
+      "destination": "Agra",
+      "price": 400,
+      "duration": 165,
+      "departureTime": "08:30 AM",
+      "arrivalTime": "11:15 AM",
+      "totalSeats": 40,
+      "availableSeats": 18,
+      "occupancy": 55,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Refreshments"
+      ],
+      "rating": 4.6
+    },
+    {
+      "totalSeats": 40,
+      "availableSeats": 40,
+      "occupancy": 0,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Charging Point"
+      ],
+      "rating": 4.5,
+      "name": "Delhi Express",
+      "price": 500,
+      "source": "Jaipur",
+      "destination": "Delhi",
+      "duration": 300,
+      "departureTime": "10:30",
+      "arrivalTime": "06:30",
+      "id": "tg3pdle3n"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "userId": "1",
+      "busId": "1",
+      "seats": [
+        "1A",
+        "1B"
+      ],
+      "bookingDate": "2024-02-01T10:30:00Z",
+      "travelDate": "2024-02-20",
+      "totalAmount": 1000,
+      "status": "confirmed",
+      "paymentId": "1",
+      "userName": "Demo Customer",
+      "busName": "Delhi Express",
+      "source": "Delhi",
+      "destination": "Jaipur"
+    },
+    {
+      "userId": "AKzxxeo",
+      "busId": "1",
+      "seats": [
+        "3C"
+      ],
+      "travelDate": "2026-02-24",
+      "totalAmount": 590,
+      "paymentId": "",
+      "userName": "johndoe",
+      "busName": "Delhi Express",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "bookingDate": "2026-02-17T07:26:46.572Z",
+      "status": "cancelled",
+      "id": "LrHFAdm"
+    },
+    {
+      "userId": "1",
+      "busId": "1",
+      "seats": [
+        "9A",
+        "9B"
+      ],
+      "travelDate": "2026-03-01",
+      "totalAmount": 1000,
+      "paymentId": "",
+      "userName": "Demo Customer",
+      "busName": "Delhi Express",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "bookingDate": "2026-02-17T13:05:23.193Z",
+      "status": "confirmed",
+      "id": "3Fq8FsA"
+    },
+    {
+      "userId": "AKzxxeo",
+      "busId": "1",
+      "seats": [
+        "3B",
+        "5A",
+        "6A",
+        "7A",
+        "7B",
+        "8A",
+        "9A",
+        "9B",
+        "10B"
+      ],
+      "travelDate": "2026-02-24",
+      "totalAmount": 5310,
+      "paymentId": "",
+      "userName": "johndoe",
+      "busName": "Delhi Express",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "bookingDate": "2026-02-17T13:11:17.581Z",
+      "status": "confirmed",
+      "id": "ainoQfw"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "bookingId": "1",
+      "amount": 847.46,
+      "gst": 152.54,
+      "totalAmount": 1000,
+      "method": "UPI",
+      "upiId": "demo@paytm",
+      "status": "success",
+      "timestamp": "2024-02-01T10:30:00Z"
+    },
+    {
+      "bookingId": "LrHFAdm",
+      "amount": 500,
+      "gst": 90,
+      "totalAmount": 590,
+      "method": "UPI",
+      "upiId": "",
+      "status": "success",
+      "timestamp": "2026-02-17T07:26:46.594Z",
+      "id": "47eadwo"
+    },
+    {
+      "bookingId": "3Fq8FsA",
+      "amount": 820,
+      "gst": 180,
+      "totalAmount": 1000,
+      "method": "UPI",
+      "upiId": "test@upi",
+      "status": "success",
+      "timestamp": "2026-02-17T13:05:23.253Z",
+      "id": "fRlAULa"
+    },
+    {
+      "bookingId": "ainoQfw",
+      "amount": 4500,
+      "gst": 810,
+      "totalAmount": 5310,
+      "method": "UPI",
+      "upiId": "mehanath20@gmail.com",
+      "status": "success",
+      "timestamp": "2026-02-17T13:11:17.620Z",
+      "id": "FwLuVqS"
+    }
+  ]
+}

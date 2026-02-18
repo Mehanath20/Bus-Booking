@@ -1,3 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+:root {
+  --primary: #0F172A;
+  /* Deep Navy */
+  --secondary: #1E40AF;
+  /* Transport Blue */
+  --accent: #F97316;
+  /* Orange */
+  --success: #16A34A;
+  /* Green */
+  --bg-dark: #0B1220;
+  /* Dark Background */
+  --card-dark: #111827;
+  /* Card Background */
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-bg-dark: var(--bg-dark);
+  --color-card-dark: var(--card-dark);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  /* Default dark background */
+  color: #F8FAFC;
+}
+
+/* Animations using standard CSS where Tailwind utilities aren't enough or for specific keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Utility Classes - Transport Theme */
+
+/* Buttons */
+.btn-primary {
+  @apply bg-orange-500 hover:bg-orange-400 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 active:scale-95;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-200;
+}
+
+/* Cards */
+.card {
+  @apply bg-slate-900 rounded-xl p-6 border border-slate-700 shadow-md transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-xl border-blue-500/30;
+}
+
+.card-glass {
+  @apply bg-slate-900/80 backdrop-blur-md border border-slate-700 rounded-xl shadow-lg transition-all duration-300;
+}
+
+.card-glass:hover {
+  @apply border-blue-500/50 shadow-blue-500/10;
+}
+
+/* Form Elements */
+.input-field {
+  @apply w-full px-4 py-3 rounded-lg border border-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-200 bg-slate-950 text-white placeholder-slate-500;
+}
+
+.label-text {
+  @apply block text-sm font-medium text-slate-400 mb-2;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
